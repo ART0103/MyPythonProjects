@@ -6,11 +6,11 @@ a = list(map(list, input().split()))
 for i in range(len(a)):
     g = 0
     for element in a:
-        if element == a[i-1]:
-            g+=1
+        if element == a[i - 1]:
+            g += 1
             if g >= 2:
                 b.append(element)
 if len(b) <= 0:
     print('Повторяющихся элементов не обнаружено')
 else:
-    print('Все повторяющиеся элементы:',b)
+    print('Все повторяющиеся элементы:', b)
