@@ -26,3 +26,11 @@ k = int(input("введите номер строки, элементы кото
 if (1 <= k) and (k <= m):
     pr = True
 if pr:
+    rows_cnt = len(D)
+    cols_cnt = len(D[0])
+
+    new_matix = [[0] * rows_cnt for _ in range(cols_cnt)]
+
+    for i in range(rows_cnt):
+        for j in range(cols_cnt):
+            new_matix[j][i] = D[i][j]
