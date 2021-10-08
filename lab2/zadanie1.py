@@ -9,8 +9,7 @@ def print_matrix(arr_2d):
             print(el, end=' ')
         print()
 
-
-с = 0
+j=1
 pr = False
 p = int(input('Введите количество строк в матрице:'))
 h = int(input('Введите количество столбцов в матрице:'))
@@ -22,19 +21,18 @@ for i in range(p):
 print('Полученная матрица:')
 print_matrix(a)
 for i in range(p):
-    for j in range(h - 1):
-        if a[i, j] <= a[i, j + 1]:
+    for j in range(h):
+        if a[i, j-1] <= a[i, j ]:
             pr = True
         else:
             pr = False
-        if pr:
-            if a[i, j] <= maxim:
-                continue
-            maxim = a[i, j]
-        else:
-            pr = False
-            maxim = 0
+    if pr:
+        if a[i, j] <= maxim:
             continue
+        maxim = a[i, j]
+    else:
+        pr = False
+        maxim = 0
 if maxim == 0:
     print('Упорядоченных строк не найдено')
 else:
