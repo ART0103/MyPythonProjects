@@ -64,20 +64,13 @@ for i in range(len(arr)):
             break
 print("ind=", ind)
 rev = mirror_matrix(tnp)
+print('rev=')
 print_matrix(rev)
 t = []
 for i in range(n):
-    t.append(rev[ind[i]])
+        t.append(rev[ind[i]])
+print('t= ')
+print_matrix(t)
 B = mirror_matrix(t)
 print_matrix(B)
-# for i in range(n):
-#     c = t[i]
-#     t[i] = t[ind[i]]
-#     t[ind[i]] = c
-# print_matrix(t)
-# for i in range(m):
-#     for j in range(n - 1):
-#         while all(arr) != all(arr2):
-#             D[i, j] = D[i, j + 1]
-#             arr = D[k - 1]
-# print_matrix(D)
+
