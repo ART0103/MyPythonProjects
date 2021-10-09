@@ -47,8 +47,8 @@ tnp = np.zeros((m, n))
 for i in range(m):
     for j in range(n):
         a = int(input("Введите число:"))
-        D[i,j] = a
-        tnp[i,j] = a
+        D[i, j] = a
+        tnp[i, j] = a
 print('Полученная матрица:')
 print_matrix(D)
 k = int(input("введите номер строки, элементы которой нужно расположить в порядке возрастания:"))
@@ -68,9 +68,9 @@ print('rev=')
 print_matrix(rev)
 t = []
 for i in range(n):
-        t.append(rev[ind[i]])
+    t.append(rev[ind[i]])
 print('t= ')
 print_matrix(t)
 B = mirror_matrix(t)
+print('b= ')
 print_matrix(B)
-
