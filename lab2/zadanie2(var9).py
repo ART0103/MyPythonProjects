@@ -1,6 +1,12 @@
 # В данной действительной квадратной матрице порядка n найти наибольший по модулю элемент.
 # Получить квадратную матрицу порядка n — 1 путем отбрасывания из исходной матрицы строки и столбца, на пересечении
 # которых расположен элемент с найденным значением.
+def print_matrix(arr_2d):
+    for arr in arr_2d:
+        for el in arr:
+            print(el, end=' ')
+        print()
+
 matrix = []
 need_stop = False
 
@@ -29,4 +35,6 @@ if len(matrix) == len(matrix[0]):
     for i in range(len(matrix)):
         del matrix[i][column]
     del matrix[row]
-print(matrix)
+    print_matrix(matrix)
+else:
+    print('Вы ввели не квадратную матрицу!')
