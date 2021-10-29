@@ -10,4 +10,4 @@ for i in range(len(array)):
         max1 = array[i]
     elif array[i] > max2:
         max2 = array[i]
-print(max1, max2)
+print('Максимальные элементы массива:', max1, max2)
