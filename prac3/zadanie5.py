@@ -4,10 +4,7 @@ print('Введите произвольные отрицательные и п�
 array = list(map(int, input().split()))
 max1 = array[0]
 max2 = array[0]
-ind = 0
 for i in range(len(array)):
     if array[i] > max1:
-        max1 = array[i]
-    elif array[i] > max2:
-        max2 = array[i]
+        max1, max2 = array[i], max1
 print('Максимальные элементы массива:', max1, max2)
