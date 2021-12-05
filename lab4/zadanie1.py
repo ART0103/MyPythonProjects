@@ -2,3 +2,4 @@
 # чтобы каждое слово начиналось с заглавной буквы.
 print('Введите предложение на английском языке:')
 print(input().title())
+# print(list(filter(lambda x: x.startswith("а") or x.endswith("я"), input().split())))
